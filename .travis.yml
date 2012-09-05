@@ -2,6 +2,7 @@ language: python
 install:
  - "python bootstrap.py --distribute"
  - "./bin/buildout"
+ - "sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 5126890CDCC7AFE0"
  - "sudo add-apt-repository ppa:eclipse-team/debian-package"
  - "sudo apt-get update"
  - "sudo apt-get install -y openjdk-6-jdk openjdk-6-source openjdk-6-demo openjdk-6-doc openjdk-6-jre-headless openjdk-6-jre-lib git-core ant zip unzip"
