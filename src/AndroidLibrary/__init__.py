@@ -152,7 +152,7 @@ class AndroidLibrary(object):
         assert output != None
         assert 'Error' not in output, output
 
-    def wait_for_device(self, timeout=120):
+    def wait_for_device(self, timeout=600):
         '''
         Wait for the device to become available
         '''
