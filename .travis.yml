@@ -6,6 +6,7 @@ install:
  - "sudo apt-get install -y openjdk-6-jdk openjdk-6-source openjdk-6-demo openjdk-6-doc openjdk-6-jre-headless openjdk-6-jre-lib git-core ant zip unzip"
  - "curl http://dl.google.com/android/android-sdk_r20.0.1-linux.tgz | tar -xzf -"
  - "pushd android-sdk-linux && export ANDROID_HOME=`pwd` && popd"
+ - "$ANDROID_HOME/tools/android update sdk -t platform-tools --no-ui"
 env:
  - ANDROID_HOME=android-sdk-linux
 python:
